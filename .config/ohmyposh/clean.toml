@@ -4,13 +4,13 @@ final_space = true
 
 [secondary_prompt]
   template = '❯❯ '
-  foreground = 'magenta'
+  foreground = 'white'
   background = 'transparent'
 
 [transient_prompt]
   template = '[{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}] $❯ '
   background = 'transparent'
-  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}magenta{{end}}']
+  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}white{{end}}']
 
 [[blocks]]
   type = 'prompt'
@@ -39,7 +39,7 @@ final_space = true
       style = 'full'
 
   [[blocks.segments]]
-    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}<red> ✗ </>{{ end }}'
+    template = ' ({{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}<red> ✗</>){{ end }}'
     foreground = 'yellow'
     background = 'transparent'
     type = 'git'
@@ -76,7 +76,7 @@ final_space = true
     background = 'transparent'
     type = 'text'
     style = 'plain'
-    foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}magenta{{end}}']
+    foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}white{{end}}']
 
     [blocks.segments.properties]
       cache_duration = 'none'

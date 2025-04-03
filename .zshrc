@@ -27,7 +27,10 @@ bindkey '^n' history-search-forward
 
 #Alias
 alias ls='ls --color'
+alias ll='ls -lah --coolor'
 alias k='kubectl'
+
+alias kctx='kubectx'
 
 #alias gauth='gcloud auth login --update-adc'
 

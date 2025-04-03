@@ -1,0 +1,18 @@
+keybind = global:f10=toggle_visibility
+keybind = super+shift+h=new_split:right
+
+theme = Bright Lights
+
+font-size = 14
+window-inherit-font-size = true
+font-thicken = true
+font-family = FiraCode Nerd Font Mono
+font-style = Regular
+
+background-opacity = 0.86
+background-blur-radius = 10
+
+unfocused-split-opacity = 0.75
+
+split-divider-color = #808080
+
