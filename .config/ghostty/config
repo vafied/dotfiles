@@ -1,7 +1,7 @@
 keybind = global:f10=toggle_visibility
 keybind = super+shift+h=new_split:right
 
-theme = Bright Lights
+theme = 0x96f
 
 font-size = 14
 window-inherit-font-size = true
