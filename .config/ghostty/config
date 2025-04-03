@@ -1,4 +1,4 @@
-keybind = global:f10=toggle_visibility
+keybind = global:f12=toggle_visibility
 keybind = super+shift+h=new_split:right
 
 theme = 0x96f
