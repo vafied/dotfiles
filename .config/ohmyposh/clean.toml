@@ -39,7 +39,7 @@ final_space = true
       style = 'full'
 
   [[blocks.segments]]
-    template = ' ({{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}<red> ✗</>){{ end }}'
+    template = ' ({{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}<red> ✗</>{{ end }})'
     foreground = 'yellow'
     background = 'transparent'
     type = 'git'
