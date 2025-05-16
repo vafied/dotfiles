@@ -8,9 +8,9 @@ final_space = true
   background = 'transparent'
 
 [transient_prompt]
-  template = '[{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}] $❯ '
+  template = '[{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }} {{.Segments.Path.Path}} $❯ '
   background = 'transparent'
-  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}white{{end}}']
+  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}magenta{{end}}']
 
 [[blocks]]
   type = 'prompt'
@@ -33,6 +33,7 @@ final_space = true
     background = 'transparent'
     type = 'path'
     style = 'plain'
+    alias = 'Path'
 
     [blocks.segments.properties]
       cache_duration = 'none'
@@ -49,6 +50,7 @@ final_space = true
       cache_duration = 'none'
       commit_icon = '@'
       fetch_status = true
+      branch_icon = ""
 
 [[blocks]]
   type = 'rprompt'
